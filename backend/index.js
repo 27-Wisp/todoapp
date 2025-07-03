@@ -16,7 +16,14 @@ const app = express();  // Enables use of CORS - * means every domain is now all
 
 // --------------------------- ↓ MIDDLEWARE SETUP ↓ --------------------------------
 app.use(express.json()); // Uses express in JSON format
-app.use(cors("*")); //Enables use of CORS - * means every domain is now allowed access to this server
+
+const corsOptions = {
+    origin:'https://todoapp-pi-lime.vercel.app', //url from Vercel. Means backend server can only be accessed from our frontend
+    methods: ["GET", "POST", "PATCH", "DELETE"], //and only these functions can interact with the our database
+    credentials: true
+};
+
+app.use(cors(corsOptions)); //Enables use of CORS - * means every domain is now allowed access to this server
 
 
 

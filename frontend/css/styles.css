@@ -28,7 +28,7 @@ nav, footer {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(./images/home_bg.jpg);
+    background-image: url(/frontend/images/home_bg.jpg);
     /* to darken image when text is still not readable*/
     /* background-blend-mode: overlay; 
     background-color: rgba(0, 0, 0, 0.134); */

@@ -149,7 +149,7 @@ async function displayTasks() {
             <p><strong>Due: </strong>${new Date(task.dueDate).toLocaleDateString()}</p>
             <div class="d-flex justify-content-between align-items-end">
                 <div>
-                    <button data-id="${task._id}" data-title="${task.title}" data-description="${task.description}" data-due-date="${new Date(task.dueDate).toLocaleDateString()}" data-bs-toggle="modal" data-bs-target="#editTaskWindow" class="btn btn-dark shadow-sm edit" type="button">Edit</button>
+                    <button data-id="${task._id}" data-title="${task.title}" data-description="${task.description}" data-due-date="${task.dueDate}" data-bs-toggle="modal" data-bs-target="#editTaskWindow" class="btn btn-dark shadow-sm edit" type="button">Edit</button>
                     <button data-id="${task._id}" type="button" class="btn btn-dark shadow-sm done">Done</button>
                 </div>
                 <p class="m-0"><strong>Created on: </strong>${new Date(task.createdOn).toLocaleDateString()}</p>

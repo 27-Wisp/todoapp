@@ -19,7 +19,7 @@ app.use(express.json()); // Uses express in JSON format
 
 const corsOptions = {
     origin:'https://todoapp-pi-lime.vercel.app', //url from Vercel. Means backend server can only be accessed from our frontend
-    methods: ["GET", "POST", "PATCH", "DELETE"], //and only these functions can interact with the our database
+    methods: ["GET", "POST", "PATCH", "DELETE", "PUT"], //and only these functions can interact with the our database
     credentials: true
 };
 
